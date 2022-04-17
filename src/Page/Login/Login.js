@@ -17,13 +17,18 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+
+
     const handleLogin = event => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
+        console.log(email, password);
         signInWithEmailAndPassword(email, password);
         console.log('set login');
     }
+
+
 
     return (
         <div>

@@ -1,0 +1,53 @@
+[debug] [2022-04-17T14:37:49.566Z] ----------------------------------------------------------------------
+[debug] [2022-04-17T14:37:49.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-04-17T14:37:49.569Z] CLI Version:   10.6.0
+[debug] [2022-04-17T14:37:49.569Z] Platform:      win32
+[debug] [2022-04-17T14:37:49.569Z] Node Version:  v16.13.1
+[debug] [2022-04-17T14:37:49.585Z] Time:          Sun Apr 17 2022 20:37:49 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-04-17T14:37:49.586Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-17T14:37:49.693Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-17T14:37:49.694Z] > authorizing via signed-in user (sishahin093@gmail.com)
+[debug] [2022-04-17T14:37:49.694Z] [iam] checking project dentist-in-shahin for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-17T14:37:49.697Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dentist-in-shahin:testIamPermissions [none]
+[debug] [2022-04-17T14:37:49.698Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dentist-in-shahin:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-17T14:38:11.013Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/dentist-in-shahin:testIamPermissions
+[debug] [2022-04-17T14:38:11.014Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin [none]
+[debug] [2022-04-17T14:38:22.445Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin
+[debug] [2022-04-17T14:48:22.974Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin
+    at RetryOperation._fn (C:\Users\MY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project dentist-in-shahin. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-04-17T14:58:33.744Z] ----------------------------------------------------------------------
+[debug] [2022-04-17T14:58:33.747Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-04-17T14:58:33.747Z] CLI Version:   10.6.0
+[debug] [2022-04-17T14:58:33.748Z] Platform:      win32
+[debug] [2022-04-17T14:58:33.748Z] Node Version:  v16.13.1
+[debug] [2022-04-17T14:58:33.756Z] Time:          Sun Apr 17 2022 20:58:33 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-04-17T14:58:33.756Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-17T14:58:33.840Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-17T14:58:33.840Z] > authorizing via signed-in user (sishahin093@gmail.com)
+[debug] [2022-04-17T14:58:33.840Z] [iam] checking project dentist-in-shahin for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-17T14:58:33.842Z] > refreshing access token with scopes: []
+[debug] [2022-04-17T14:58:33.843Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-17T14:59:21.598Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 17 Apr 2022 14:58:39 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-17T14:59:21.613Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dentist-in-shahin:testIamPermissions [none]
+[debug] [2022-04-17T14:59:21.613Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dentist-in-shahin:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-17T15:00:52.516Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/dentist-in-shahin:testIamPermissions
+[debug] [2022-04-17T15:00:52.517Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin [none]
+[debug] [2022-04-17T15:01:13.622Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin 200
+[debug] [2022-04-17T15:01:13.622Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin {"projectId":"dentist-in-shahin","projectNumber":"541628022622","displayName":"dentist-in-shahin","name":"projects/dentist-in-shahin","resources":{"hostingSite":"dentist-in-shahin"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'dentist-in-shahin'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-04-17T15:01:13.625Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin [none]
+[debug] [2022-04-17T15:01:43.636Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin
+[debug] [2022-04-17T15:02:31.362Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/dentist-in-shahin
+    at RetryOperation._fn (C:\Users\MY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:236:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project dentist-in-shahin. Please make sure the project exists and your account has permission to access it.

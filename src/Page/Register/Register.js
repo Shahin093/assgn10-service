@@ -6,28 +6,54 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Register.css'
 const Register = () => {
     const [agree, setAgree] = useState(false);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
+    // const [
+    //     createUserWithEmailAndPassword,
+    //     user,
+    // ] = useCreateUserWithEmailAndPassword(auth);
+
+    // const navigateLogin = () => {
+    //     navigate('/login');
+    // }
+
+    // const handleRegister = event => {
+    //     event.preventDefault();
+    //     const name = event.target.name.value;
+    //     const email = event.target.email.value;
+    //     const password = event.target.password.value;
+    //     createUserWithEmailAndPassword(email, password);
+    //     // navigate('/')
+    // }
+
+    // if (user) {
+    //     console.log('user : ', user);
+    // }
+    // console.log(user);
+
+
+
+
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    ] = useCreateUserWithEmailAndPassword(auth);
+
+    const handleRegister = (event) => {
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        createUserWithEmailAndPassword(email, password);
+        console.log('successfully regis');
+    }
+    const navigate = useNavigate();
+    if (error) {
+        console.log(error);
+    }
 
     const navigateLogin = () => {
         navigate('/login');
     }
-
-    const handleRegister = event => {
-        event.preventDefault();
-        const name = event.target.name.value;
-        const email = event.target.email.value;
-        const password = event.target.password.value;
-        createUserWithEmailAndPassword(email, password);
-        navigate('/')
-    }
-
-
 
     return (
         <div className='register-from'>
