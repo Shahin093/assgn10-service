@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../images/dentist-logo/dentist-logo.png'
+import Slider from '../Slider/Slider';
 const Heading = () => {
     return (
         <div>
@@ -26,6 +27,7 @@ const Heading = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <Slider></Slider>
         </div>
     );
 };
