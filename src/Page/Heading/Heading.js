@@ -2,12 +2,11 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../images/dentist-logo/dentist-logo.png'
-import Slider from '../Slider/Slider';
 const Heading = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Container>
+            <Navbar className='sticky="top"' collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Container className='sticky="top"'>
                     <Navbar.Brand href="#home" as={Link} to={'/'}>
                         <img height='30px' width='50px' src={logo} alt="" />
                     </Navbar.Brand>
@@ -19,7 +18,7 @@ const Heading = () => {
 
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
+                            <Nav.Link as={Link} to={'/login'}>Login</Nav.Link>
                             <Nav.Link eventKey={2} href="#memes">
                                 Dank memes
                             </Nav.Link>
@@ -27,7 +26,7 @@ const Heading = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Slider></Slider>
+
         </div>
     );
 };

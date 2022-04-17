@@ -22,6 +22,7 @@ const Slider = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
+
                         height="600px"
                         className="d-block w-100"
                         src={banner2}
