@@ -10,19 +10,20 @@ const Slider = () => {
             <Carousel fade>
                 <Carousel.Item>
                     <img
+                        style={{ background: "rgba(0, 0, 0, 0.6)" }}
                         height="600px"
                         className="d-block w-100"
                         src={banner1}
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>COVID HOME CARE PACKAGE</h3>
+                        <p>COVID Home Care package COVID Home Care Package for COVID positive patients with no/mild symptoms.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-
+                        style={{ background: "rgba(0, 0, 0, 0.6)" }}
                         height="600px"
                         className="d-block w-100"
                         src={banner2}
@@ -30,12 +31,14 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Night Guard &
+                            Bruxism Guard</h3>
+                        <p>prevent the cracks from forming in your teeth from excessive biting pressure or grinding your teeth. It may also called Teeth Guard.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
+                        style={{ background: "rgba(0, 0, 0, 0.6)" }}
                         height="600px"
                         className="d-block w-100"
                         src={banner3}
@@ -43,8 +46,9 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Periodontal
+                            Treatment</h3>
+                        <p>Sometimes basic general dental cleaning are not enough due to the conditions already present in your mouth. Then we must look into a slightly more aggressive form of dental cleaning.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

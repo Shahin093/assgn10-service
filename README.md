@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# My Project name : Dentist-in-Shahin
+Project live link : (https://dentist-in-shahin.web.app/)
+* using routing 
+* using firebase authenticaiton
+* using create react app
+* using firebase hooks 
+* ReqiredAuth 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

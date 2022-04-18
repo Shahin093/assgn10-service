@@ -1,5 +1,6 @@
 import React from 'react';
-
+import facebook from '../../images/social/facebook.png'
+import google from '../../images/social/google.png'
 const Footer = () => {
     return (
         <div className='pt-5' style={{ background: 'rgb(169,184,195)' }}>
@@ -25,9 +26,16 @@ const Footer = () => {
                     <h1 style={{ background: '#000080', color: '#FFFFFF' }}>Social Networks</h1>
                     <p></p>
                     <p>Visit DentiCare on these social links connect with us. Make sure to follow our accouts for regular updates.</p>
+                    <div >
+                        <img style={{ margin: '30px' }} src={facebook} alt="" />
+                        <img src={google} alt="" />
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

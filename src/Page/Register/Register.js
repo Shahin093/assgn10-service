@@ -4,28 +4,10 @@ import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Register.css'
+import Loading from '../Loading/Loading';
 const Register = () => {
     const [agree, setAgree] = useState(false);
-    // const navigate = useNavigate();
-    // const [
-    //     createUserWithEmailAndPassword,
-    //     user,
-    // ] = useCreateUserWithEmailAndPassword(auth);
-    // const navigateLogin = () => {
-    //     navigate('/login');
-    // }
-    // const handleRegister = event => {
-    //     event.preventDefault();
-    //     const name = event.target.name.value;
-    //     const email = event.target.email.value;
-    //     const password = event.target.password.value;
-    //     createUserWithEmailAndPassword(email, password);
-    //     // navigate('/')
-    // }
-    // if (user) {
-    //     console.log('user : ', user);
-    // }
-    // console.log(user);
+    const errorElement = '';
 
     const [
         createUserWithEmailAndPassword,
@@ -50,6 +32,15 @@ const Register = () => {
     const navigateLogin = () => {
         navigate('/login');
     }
+    if (loading) {
+        return <Loading></Loading>
+    }
+    if (error) {
+
+        errorElement =
+            <p className='text-danger'>Error: {error?.message}</p>
+
+    }
 
     return (
         <div className='register-from'>
@@ -69,6 +60,7 @@ const Register = () => {
                     value="Register" />
 
             </form>
+            {errorElement}
             <p>Already have a acount <Link to={'/login'} className='text-primary p-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
             <SocialLogin></SocialLogin>
         </div >

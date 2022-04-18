@@ -11,10 +11,9 @@ const Service = ({ service }) => {
     return (
         <div className=' col-12 col-lg-4 '>
 
+            <div className='' style={{ border: '1px solid blue', borderRadius: '10px', marginTop: '10px' }}>
 
-            <div className=''>
-
-                <img width={'350px'} src={url} alt="" />
+                <img width={'350px'} height={'300px'} src={url} alt="" />
                 <h3>{name}</h3>
                 <p>{name}</p>
                 <h5>{price}</h5>
