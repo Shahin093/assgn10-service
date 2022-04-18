@@ -23,7 +23,7 @@ const Heading = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" >
                             <Nav.Link style={{ color: '#000080' }} href="#services">Services</Nav.Link>
-                            <Nav.Link style={{ color: '#000080' }} href="#blogs">Blogs</Nav.Link>
+                            <Nav.Link style={{ color: '#000080' }} as={Link} to={'/blogs'} href="#blogs">Blogs</Nav.Link>
 
                         </Nav>
                         <Nav>
