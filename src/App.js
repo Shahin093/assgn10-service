@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import Heading from './Page/Heading/Heading';
-import Slider from './Page/Slider/Slider';
 import { Route, Routes } from 'react-router-dom';
 import Login from './Page/Login/Login';
-import Services from './Page/Services/Services';
 import Footer from './Page/Footer/Footer';
 import Register from './Page/Register/Register';
 import Checkout from './Page/Checkout/Checkout';
 import RequiredAuth from './Page/RequiredAuth/RequiredAuth';
 import ServiceDetail from './Page/ServiceDetail/ServiceDetail';
+import Home from './Page/Home/Home';
 
 function App() {
   return (
     <div className="App">
       <Heading></Heading>
-      {/* <Slider></Slider> */}
       <Routes>
-        <Route path></Route>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/checkout' element={
@@ -28,8 +26,7 @@ function App() {
         {/* <Route path='/service/:serviceId'element={<ServiceDetail></ServiceDetail>} ></Route> */}
         <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
       </Routes>
-      <Slider></Slider>
-      <Services></Services>
+
       <Footer></Footer>
     </div>
   );

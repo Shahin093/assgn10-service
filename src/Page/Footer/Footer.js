@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div style={{ background: 'rgb(169,184,195)' }}>
+        <div className='pt-5' style={{ background: 'rgb(169,184,195)' }}>
             <div className="row">
                 <div className='col-12 col-md-4' style={{ border: "2px solid blue " }}>
                     <h1 style={{ background: '#000080', color: '#FFFFFF', width: '100%' }}>Denti <span>Care</span></h1>

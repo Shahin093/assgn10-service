@@ -16,7 +16,7 @@ const Heading = () => {
         <div style={{ background: '#B2BEB5' }}>
             <Navbar className='sticky="top"' collapseOnSelect expand="lg" variant="dark">
                 <Container className=''>
-                    <Navbar.Brand href="#home" as={Link} to={'/'}>
+                    <Navbar.Brand href="#home" as={Link} to={'/home'}>
                         <img height='30px' width='50px' src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

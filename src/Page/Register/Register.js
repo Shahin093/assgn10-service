@@ -40,6 +40,7 @@ const Register = () => {
         const password = event.target.password.value;
         createUserWithEmailAndPassword(email, password);
         console.log('successfully regis');
+        navigate('/home')
     }
     const navigate = useNavigate();
     if (error) {
