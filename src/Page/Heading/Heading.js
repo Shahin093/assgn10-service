@@ -22,11 +22,12 @@ const Heading = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" >
-                            <Nav.Link style={{ color: '#000080' }} href="#services">Services</Nav.Link>
+                            <Nav.Link style={{ color: '#000080' }} href="home#services">Services</Nav.Link>
                             <Nav.Link style={{ color: '#000080' }} as={Link} to={'/blogs'} href="#blogs">Blogs</Nav.Link>
 
                         </Nav>
                         <Nav>
+                            <Nav.Link style={{ color: '#000080' }} as={Link} to={'/aboutme'} href="#aboutme">About Me</Nav.Link>
                             {
                                 user ?
                                     <button style={{ background: '#000080' }} className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>SignOut</button>
