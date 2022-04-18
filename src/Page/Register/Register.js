@@ -11,11 +11,9 @@ const Register = () => {
     //     createUserWithEmailAndPassword,
     //     user,
     // ] = useCreateUserWithEmailAndPassword(auth);
-
     // const navigateLogin = () => {
     //     navigate('/login');
     // }
-
     // const handleRegister = event => {
     //     event.preventDefault();
     //     const name = event.target.name.value;
@@ -24,23 +22,20 @@ const Register = () => {
     //     createUserWithEmailAndPassword(email, password);
     //     // navigate('/')
     // }
-
     // if (user) {
     //     console.log('user : ', user);
     // }
     // console.log(user);
-
-
-
 
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const handleRegister = (event) => {
+        event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
         createUserWithEmailAndPassword(email, password);

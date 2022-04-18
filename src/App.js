@@ -7,6 +7,9 @@ import Login from './Page/Login/Login';
 import Services from './Page/Services/Services';
 import Footer from './Page/Footer/Footer';
 import Register from './Page/Register/Register';
+import Checkout from './Page/Checkout/Checkout';
+import RequiredAuth from './Page/RequiredAuth/RequiredAuth';
+import ServiceDetail from './Page/ServiceDetail/ServiceDetail';
 
 function App() {
   return (
@@ -14,8 +17,16 @@ function App() {
       <Heading></Heading>
       {/* <Slider></Slider> */}
       <Routes>
+        <Route path></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/checkout' element={
+          <RequiredAuth>
+            <Checkout></Checkout>
+          </RequiredAuth>
+        }></Route>
+        {/* <Route path='/service/:serviceId'element={<ServiceDetail></ServiceDetail>} ></Route> */}
+        <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
       </Routes>
       <Slider></Slider>
       <Services></Services>

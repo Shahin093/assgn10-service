@@ -13,25 +13,25 @@ const Heading = () => {
     }
 
     return (
-        <div>
-            <Navbar className='sticky="top"' collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Container className='sticky="top"'>
+        <div style={{ background: '#B2BEB5' }}>
+            <Navbar className='sticky="top"' collapseOnSelect expand="lg" variant="dark">
+                <Container className=''>
                     <Navbar.Brand href="#home" as={Link} to={'/'}>
                         <img height='30px' width='50px' src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav className="me-auto" >
+                            <Nav.Link style={{ color: '#000080' }} href="#services">Services</Nav.Link>
+                            <Nav.Link style={{ color: '#000080' }} href="#blogs">Blogs</Nav.Link>
 
                         </Nav>
                         <Nav>
                             {
                                 user ?
-                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>SignOut</button>
+                                    <button style={{ background: '#000080' }} className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>SignOut</button>
                                     :
-                                    <Nav.Link as={Link} to={'/login'}>
+                                    <Nav.Link style={{ background: '#000080' }} as={Link} to={'/login'}>
                                         Login
                                     </Nav.Link>
                             }
