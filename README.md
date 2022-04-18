@@ -6,6 +6,10 @@ Project live link : (https://dentist-in-shahin.web.app/)
 * using firebase hooks 
 * ReqiredAuth 
 
+(Bises babe janassi sir ? 
+ami github a commit korsilam but link nite jokkhon giyesi tokkhon dekhtesi amr github aa ekta o commit jainai . 
+
+)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
